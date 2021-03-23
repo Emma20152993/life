@@ -351,7 +351,7 @@ strong{
 /* Recent Posts Page Styling */
 
 
-@media(max-width:1000px) {
+@media(max-width:1024px) {
     .container{
         max-width: 100%;
         margin: 0;
@@ -515,7 +515,11 @@ strong{
         }
     }
 
-    @media(max-width:360px){
+    @media(max-width:375px){
+        .find-text{
+            font-size: 1rem;    
+        }
+
         .main-text h1{
             font-size: 1.6rem;
         }
