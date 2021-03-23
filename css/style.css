@@ -1,0 +1,530 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 90%;
+    margin: 2em auto;
+    /* border: 2px solid mediumvioletred; */
+}
+
+.header {
+    height: auto;
+    display: flex;
+    background-color: #f3f3f3;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-bar ul li a {
+    margin: 1em;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: fantasy;
+    color: #20070c;
+    font-size: 20px;
+    padding: 0.50em 1em;
+    transition: all 1s ease;
+}
+
+.nav-bar ul li a:hover {
+    background-color: #05031b;
+    color: #f8f2f2;
+    transform: translate(5px);
+}
+
+.main-text {
+    font-weight: 600;
+    font-family: cursive;
+    color: #2b4794;
+}
+
+.active {
+    border-bottom: 5px solid #ccc;
+    padding-bottom: .20em;
+}
+
+/* End of the Header Styling */
+
+/* The main Styling */
+
+.find-life{
+    display: flex;
+    width:75%;
+    margin: 4em auto;
+    justify-content: space-between;
+}
+
+.mymain{
+    width: 70%;
+}
+
+.my-main{
+    border-bottom: 2px solid #ddd;
+    padding-bottom: .50em;
+}
+
+/* The side bar Styling */
+.sidebar{
+    width: 25%;
+}
+
+/* span{
+    display: block;
+} */
+
+/* The Image Styling */
+
+.img-text,
+.menu-img,
+.side-main-one img,
+.side-main-two img,
+.recent-post img{
+    width: 100%;
+    opacity: 0.7;
+    transition: all 1s ease;
+    border-radius: 5px;
+}
+
+.img-text:hover,
+.menu-img:hover,
+.side-main-one img:hover,
+.side-main-two img:hover,
+.recent-post img:hover{
+    opacity: 1;
+    border-radius: 10px;
+    filter: drop-shadow(2px 0px 2px black);
+}
+
+/* End of Image Styling */
+
+/* The menu bar styling */
+.menu-bar{
+    display: flex;
+    margin-top: 1em;
+    /* border: 2px solid black; */
+}
+
+.menu-bar-life{
+   width: 60%;
+   padding: 1.8em 0;
+}
+
+.menu-bar-text{
+    width: 60%;
+    padding: 1em 2em;
+}
+
+
+/* Typography */
+span{
+    margin: .50em 0;
+    display: inline-block;
+    color: #20070c;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: fantasy;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.find-text{
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    margin: .50em 0;
+    background: linear-gradient(to right,#110b46,#20070c);
+    -webkit-background-clip:text;
+   -webkit-text-fill-color: transparent;
+}
+
+.quick-text,
+.menu-bar-text p,
+.side-main-one p,
+.recent p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: cursive;
+    color: #20070c;
+    margin: 0;
+}
+
+.side-main-one p{
+    margin-top: 1.5em;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-left: .30em;
+}
+
+.menu-bar-text h2{
+    font-size: 1.4rem;
+    font-weight: 800;
+    font-family: cursive;
+    color: #110b46;
+    margin-bottom: .80em;
+}
+
+.side-main-one h3,
+.side-main-two h3,
+.side-bar h3{
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-family: cursive;
+    color: #110b46;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.recent p,
+.side-bar p{
+    color:  #110b46;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: .70em;
+}
+
+.recent-text{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2em;
+}
+
+
+
+/* Links Styling */
+a{
+    color: #2b4794;
+    text-decoration: none; font-family: cursive;
+    display: block;
+    padding: 1.5em 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: fantasy;
+}
+
+.link-text{
+    text-decoration: underline;
+    display: inline;
+    text-transform: lowercase;
+    font-family: cursive;
+}
+
+/* The Sidebar Styling */
+.side-main-one,
+.side-main-two{
+    border: 15px solid #ddd;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.side-main-one{
+    padding: 5em 2em;
+}
+
+.side-main-two{
+    padding: 4em 2em;
+}
+
+.side-main-one{
+    margin-top:1em;
+    margin-bottom: 3em;
+}
+
+.recent{
+    margin: 1.8em 0;
+}
+/* End of Sidebar Styling */
+
+
+/* Thw footer Styling */
+
+footer{
+    height: auto;
+    display: flex;
+    background-color: #110b46;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+    color: #f8f2f2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.foot-text{
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    margin-bottom:.50em;
+}
+
+.copy-right{
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+/* Index-Html Styling */
+
+/* About page Styling */
+
+/* Main Styling */
+
+.about-flip{
+    /* border: 2px solid maroon; */
+    margin-top:.20em;
+}
+
+.about-text{
+    margin: 3em 0;
+}
+
+/* Typography Styles */
+.about-text{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: cursive;
+    color: #20070c;
+    letter-spacing: 1px;
+}
+
+.about-text p:first-child{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: fantasy;
+    color: #110b46;
+    margin: 0.50em 0;
+    letter-spacing: 1px;
+}
+
+.last-text{
+    margin: 0;
+}
+
+strong{
+    font-weight: bolder;
+    color: #2b0c49;
+}
+
+.about-text p:nth-child(2n){
+    margin: 1em 0;
+}
+
+/* About Me Styling */
+.about-me{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin:4em auto;
+}
+
+.main-area{
+    flex: 2;
+}
+
+.my-side{
+    flex: 1;
+    margin-left: 5em;
+    /* border: 12px solid red; */
+}
+
+.side-bar{
+    border: 15px solid #ddd;
+    margin-top: 2em;
+    padding: 5em 2em;
+    width: 70%;
+}
+
+/* End of About Page Styling */
+
+
+/* Recent Posts Page Styling */
+
+
+@media(max-width:1000px) {
+    .container{
+        max-width: 100%;
+        margin: 0;
+    }
+    .header {
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+
+    .side-main-one,
+    .side-main-two{
+        padding: 5em 2em;
+    }
+
+    .my-span{
+        float: none;
+    }
+
+    span{
+        font-size: 15px;
+        float:right;
+    }
+
+    .find-life{
+        width: 95%;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .mymain,.menu-bar{
+        width: 95%;
+        margin: auto;
+    }
+
+    .my-main{
+        border-bottom: none;
+    }
+
+    .menu-bar{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-bar-life,
+    .menu-bar-text{
+        width: 100%;
+    }
+
+    .sidebar{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .about-me{
+        flex-direction: column;
+    }
+
+    .my-side{
+        margin-left: 0;
+    }
+
+    .side-bar{
+        width: 100%;
+    }
+
+    .about-text p:first-child{
+        font-size: 1.2rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+}
+
+
+@media(max-width:550px) {
+        .nav-bar ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        ul li a {
+            display: inline-block;
+        }
+
+
+        /* The Main Styling */
+        .find-life{
+            width: 95%;
+            margin: auto;
+            flex-direction: column;
+        }
+
+        .mymain,.menu-bar{
+            width: 95%;
+            margin: auto;
+        }
+
+        .my-main{
+            border-bottom: none;
+        }
+
+        .menu-bar{
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .menu-bar-life,
+        .menu-bar-text{
+            width: 100%;
+        }
+
+        .menu-bar-text{
+            padding: 0;
+        }
+
+        .menu-bar-text h2{
+            padding: 0;
+        }
+
+        .menu-bar-text p{
+            margin: 0;
+        }
+
+        .read-text{
+            text-align: center;
+        }
+
+        .reading{
+            display: none;
+        }
+
+        .side-main-one{
+            margin-top: 5em;
+        }
+
+        /* The Aside Menu Media Styling */
+        .sidebar{
+            width: 100%;
+            margin-bottom: 2em;
+        }
+    }
+
+    @media(max-width:450px){
+        .main-text h1{
+            font-size: 1.8rem;
+            text-align: center;
+            font-weight: bolder;
+        }
+        .main-text p{
+            font-size: .95rem;
+            text-align: center;
+        }
+    }
+
+    @media(max-width:400px){
+        .foot-text{
+            font-size: 1rem;
+        }
+    }
+
+    @media(max-width:360px){
+        .main-text h1{
+            font-size: 1.6rem;
+        }
+
+        .main-text p{
+            font-size: .85rem;
+        }
+
+        .find-text{
+            font-size: 1.5rem;
+        }
+    }
